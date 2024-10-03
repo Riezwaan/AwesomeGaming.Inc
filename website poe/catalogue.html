@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Catalogue - AwesomeGaming.Inc</title>
+    <style>
+        /* Full-page video background */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Overlay for darkening the background video */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        /* Header Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent */
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 2;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav .btn {
+            background-color: #ff4757;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav .btn:hover {
+            background-color: #ff4757;
+        }
+
+        /* Enhanced Catalogue Title */
+        .content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 20px 0;
+            text-transform: uppercase;
+        }
+
+        .content p {
+            font-size: 1.5rem;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            padding-top: 150px;
+        }
+
+        /* Styling for the games */
+        .games-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 50px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .game {
+            background-color: rgba(28, 28, 28, 0.8); /* Semi-transparent background */
+            color: white;
+            width: 300px;
+            margin: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .game img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ff4757;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #ff4757;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent */
+            color: rgb(255, 255, 255);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="Assets/Images/AwesomeGaming.Inc.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- Header Navigation -->
+    <nav>
+        <a href="index.html" class="btn">Home</a>
+        <a href="Contact.html" class="btn">Contact</a>
+        <a href="About us.html" class="btn">About Us</a>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <section class="content">
+            <h1>Game Catalogue</h1>
+            <p>Explore our extensive collection of games</p>
+        </section>
+
+        <!-- Games List -->
+        <section class="games-list">
+            <!-- Game blocks -->
+            <div class="game">
+                <img src="Assets/Images/grand_theft_auto_v.png" alt="Grand Theft Auto V">
+                <h2>Grand Theft Auto V</h2>
+                <p>Description of Game 1. Exciting and thrilling gameplay awaits!</p>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="btn">Preorder</a>
+            </div>
+            <div class="game">
+                <img src="Assets/Images/th.jpg" alt="FC 24">
+                <h2>FC 24</h2>
+                <p>Description of Game 2. Experience a new adventure!</p>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="btn">Preorder</a>
+            </div> 
+            <div class="game">
+                <img src="Assets/Images/elden.jpeg" alt="Elden Ring">
+                <h2>Elden Ring</h2>
+                <p>Description of Game 3. Experience a new adventure!</p>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="btn">Preorder</a>
+            </div>
+            <div class="game">
+                <img src="Assets/Images/call of duty bo6.webp" alt="Call of Duty BO6">
+                <h2>Call of Duty BO6</h2>
+                <p>Description of Game 4. Experience a new adventure!</p>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="btn">Preorder</a>
+            </div>
+            <div class="game">
+                <img src="Assets/Images/skyrim.jpeg" alt="Skyrim">
+                <h2>Skyrim</h2>
+                <p>Description of Game 5. Experience a new adventure!</p>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="btn">Preorder</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; AwesomeGaming Inc
+    </footer>
+</body>
+</html>

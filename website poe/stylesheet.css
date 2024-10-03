@@ -1,0 +1,77 @@
+/* Existing styles here */
+
+header {
+    background: #f10c0c;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.games-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.game {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.game img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.game h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.game p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.game .btn {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background: #ff4757;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.game .btn:hover {
+    background: #e84118;
+}
